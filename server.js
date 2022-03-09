@@ -26,6 +26,7 @@ app.get('/zf*zy', function(req, res){
     res.send('Outro Componente a partir de uma rota customizada!');
 });
 
+//connexão com o front pasta public
 app.use(express.static('public'));
 
 //aqui, vamos implementar o "Escutador da requisição"

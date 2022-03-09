@@ -9,10 +9,16 @@
     <p>Welcome to <%= title %></p>
     <br/>
 
-    <form action="/data_get_parsing" method="GET">
+    <form action="/post" method="POST">
       Nome: <input type="text" name="nome">
       <br/>
       Sobrenome: <input type="text" name="sobrenome">
+      <br/>
+      Idade: <input type="number" name="idade">
+      <br/>
+      Cidade: <input type="text" name="cidade">
+      <br/>
+      Estado: <input type="text" name="estado">
       <input type="submit" value="Enviar">
     </form>
   </body>

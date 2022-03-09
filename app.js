@@ -22,10 +22,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.get('/data_get_parsing', function (req, res) {
+app.post('/post', function (req, res) {
    response = {
-     nome:req.query.nome,
-     sobrenome:req.query.sobrenome
+     nome:req.body.nome,
+     sobrenome:req.body.sobrenome,
+     idade:req.body.idade,
+     cidade:req.body.cidade,
+     estado:req.body.estado
    };
    console.log(response);
    res.end(JSON.stringify(response));
